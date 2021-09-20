@@ -54,3 +54,5 @@ dkms.conf
 
 # Backup
 *.bak
+
+patches
