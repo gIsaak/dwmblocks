@@ -1,13 +1,13 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		                                    /*Update Interval*/	/*Update Signal*/
-    {"",        "sb-connman",                                               10,		            0},
+    {"",        "sb-connman",                                                5,		            0},
 
-	{"Mem:", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	    10,		            0},
+	{"",        "sb-ram",	                                                10,		            0},
 
-    {"Bat:", "cat /sys/class/power_supply/BAT0/capacity | sed 's/$/%/'",    60,                 0},
+    {"",        "sb-bat",                                                   60,                 0},
 
-	{"",      "date '+%b %d (%a) %H:%M'",					                5,		            0},
+	{"",        "sb-date",					                                 5,		            0},
 
 };
 
